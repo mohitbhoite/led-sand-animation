@@ -71,7 +71,7 @@ void pageSelect(uint8_t n) {
 void setup(void) {
   Serial.begin(9600);
   uint8_t i, j, bytes;
-   xl.begin(11);                   // Setup SPI protocol, issue device soft reset
+   xl.begin(11);                   // Setup SPI protocol, issue device soft reset. CS pin is 11
   xl.beginMeasure();              // Switch ADXL362 to measure mode 
   delay(500);
 
